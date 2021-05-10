@@ -6,7 +6,7 @@
 </head>
 <body>
 <marquee behavior="alternate" bgcolor="#d9d9ff" hspace="50" vspace="20" >Welcome To ECrop Market</marquee>
-  <a href='farmer_profile.php'>Go Back</a>
+  <a href='vender_profile.php'>Go Back</a>
 	<form action='logout.php' method='POST'>
    <button class='button' type='submit'> <span>Logout</span></button>
   </form>
