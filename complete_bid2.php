@@ -83,7 +83,7 @@ $stmt->execute();
 $result=$stmt->get_result();
 $row = mysqli_fetch_array($result);
 $price=$row['price'];
-			echo "<input class='text1' type='text' name='price' value='$price' required>";
+			echo "<input class='text1' type='number' name='price' value='$price' required>";
 			echo "<input type='text' name='img' value='$img' hidden>";
 			echo "<input type='text' name='name' value='$name' hidden>";
       echo "<input type='text' name='username' value='$phoneno' hidden>";

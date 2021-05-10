@@ -39,7 +39,7 @@ $result=$stmt->get_result();
 $row=$result->fetch_assoc();
 $hash=$row["password"];
 
-if(password_verify($_POST["password"],$hash))
+if($_POST["password"]==$hash)
 {
 	session_start();
 	$_SESSION["username"]=$_POST["username"];
@@ -65,7 +65,7 @@ else
 else
 {
 $password=$_POST["password"];
-if($username=='1234567890' && $password=='admin')
+if($username=='1234567890' && $password=='qwerty')
 {
 	header("Location:admin.php");
 }

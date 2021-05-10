@@ -8,23 +8,8 @@
 <body>
 	<marquee behavior="alternate" bgcolor="#d9d9ff" hspace="50" vspace="20" >Welcome To ECrop Market</marquee>
 <?php
-	echo "<form  class='add_buyer_form' action='check_user.php' method='POST'>";
-	if(isset($_GET["user"]))
-	{
-	if($_GET["user"]=="successful")
-		{
-			echo "<h3>Successfully added User</h3>";
-		}
-		else if($_GET["user"]=="duplicate")
-		{
-			echo "<h3>User already exists.Please enter another Username and password</h3>";
-		}
-	}
-		else{
-		echo "<h3>Please Add Details</h3>";
-		}
-	
-
+echo "<form  class='add_buyer_form' action='check_code.php' method='POST'>";
+echo "<h3>Invalid Credentials.Please try again.</h3>";
 	echo "<label class='label'  for='username'>Phone:</label>";
 	echo "<input class='text' type='number' name='username' min='6600000000' max='9999999999' placeholder='Phone' required>";
 	echo "<br>";
@@ -33,8 +18,6 @@
 	echo "<input class='text' type='text' name='name' placeholder='Name' required>";
 	echo "<br>";
 
-	echo "<label class='label' for='password'>Password:</label>";
-	echo "<input class='password'  type='password' name='password' placeholder='Password' required>";
 	echo "<br>";
 	echo "<label class='label' for='Code'>Secret Code:</label>";
 	echo "<input class='text'  type='text' name='code' placeholder='Secret Code' required>";
@@ -49,7 +32,7 @@ echo  "<option value='Vender'>Vender</option>";
 echo "</select>"; 
 echo "<br>";
 echo "<br>";
-	echo "<button class='button' type='submit'> <span>SignUp</span></button>";
+	echo "<button class='button1' type='submit'> <span>Show Password</span></button>";
 	echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href='index.php'>Login</a>";
 	echo "</form>";
 ?>

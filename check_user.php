@@ -21,10 +21,10 @@ if($conn->connect_error)
 
 $username=$_POST["username"];
 $name=$_POST["name"];
+$code=$_POST["code"];
 $password=$_POST["password"];
 $category=$_POST["category"];
 
-$hashed=password_hash($password, PASSWORD_DEFAULT);
 
 if($category=='Farmer')
 {
@@ -46,14 +46,14 @@ if($result->num_rows>=1)
 else
 {	if($category=="Farmer")
 	{
-		$statement="insert into farmer(phone,name,password) values(?,?,?)";
+		$statement="insert into farmer(phone,name,password,code) values(?,?,?,?)";
 	}
 	else
 	{
-		$statement="insert into vender(phone,name,password) values(?,?,?)";
+		$statement="insert into vender(phone,name,password,code) values(?,?,?,?)";
 	}
 $stmt=$conn->prepare($statement);
-$stmt->bind_param("sss",$username,$name,$hashed);
+$stmt->bind_param("ssss",$username,$name,$password,$code);
 $stmt->execute();
 	$value="successful";
 	header("Location:index.php?user=$value");

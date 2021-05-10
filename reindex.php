@@ -12,7 +12,7 @@ echo "<form  class='add_buyer_form' action='check_login.php' method='POST'>";
 	echo "<h3>Invalid Credentials.Please Login Again</h3>";
 
 	echo "<label class='label'  for='username'>Phone:</label>";
-	echo "<input class='text' type='text' name='username' placeholder='Phone' required>";
+	echo "<input class='text' type='number' name='username'placeholder='Phone' required>";
 	echo "<br>";
 	echo "<label class='label' for='password'>Password:</label>";
 	echo "<input class='password'  type='password' name='password' placeholder='Password' required>";
@@ -29,6 +29,7 @@ echo "</select>";
 	echo "<br>";
 	echo "<button class='button' type='submit'> <span>SignUp</span></button>";
 	echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href='add_user.php'>SignUp</a>";
+	echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href='forget.php'>Forget Password</a>";
 
 	echo "</form>";
 ?>
