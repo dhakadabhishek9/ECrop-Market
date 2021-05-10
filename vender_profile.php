@@ -30,7 +30,6 @@ echo "<form  class='add_buyer_form' action='delete_vender.php' method='POST'>";
 echo "<h1>Welcome $name</h1>";
 echo "<a href='bid.php'>Go for Bidding</a>";
 echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href='vreceipt.php'>My Receipts</a><br><br>";
-echo "<button class='button' type='submit'> <span>Edit</span></button>";
 echo "<button class='button' type='submit'> <span>Delete</span></button>";
 echo "</form>";
 echo "<form  class='add_buyer_form' action='logout.php' method='POST'>";
